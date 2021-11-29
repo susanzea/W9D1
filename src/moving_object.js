@@ -5,23 +5,20 @@ const MovingObject = function(oh) {
     this.color = oh['color'];
     // note: could have also used . instead of indexing
 }
-MovingObject.prototype.draw = function() {
-    debugger
-    document.addEventListener('DOMContentLoaded', () => {
-        debugger
-        const CanvasEl = document.getElementById('game-canvas');
-        const ctx = CanvasEl.getContext('2D');
-        ctx.beginPath();
-        ctx.arc(250, 250, this.radius, 0, 2 * Math.PI);
-        ctx.closePath();
-        ctx.stroke();
-    })
+
+// const mo = new MovingObject({
+//     pos: [30, 30],
+//     vel: [10, 10],
+//     radius: 5,
+//     color: "#00FF00"
+// });
+
+MovingObject.prototype.draw = function (ctx) {
+    ctx.beginPath();
+    ctx.arc(250, 250, this.radius, 0, 2 * Math.PI);
+    ctx.closePath();
+    ctx.stroke();
 };
-
-//window.MovingObjectDraw = MovingObject.prototype.draw
-
-    
-//blehhhhhh
 
 
 
