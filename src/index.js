@@ -12,5 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         radius: 50,
         color: "#00FF00"
     });
-    mo.draw(ctx)
+    var drawMo = setInterval(mo.draw(ctx), 100);
+    var moveMo = setInterval(mo.move(), 100);
+    if (mo.pos[0] > 500 || mo.pos[1] > 500){
+        clearInterval(drawMo);
+        clearInterval(moveMo);
+    };
 });
