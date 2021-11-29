@@ -1,0 +1,1 @@
+Util.inherits(Asteroid, MovingObject)
