@@ -25,7 +25,7 @@ eval("const MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./src
   \******************************/
 /***/ ((module) => {
 
-eval("const MovingObject = function(oh) {\n    this.pos = oh['pos'];\n    this.vel = oh['vel'];\n    this.radius = oh['radius'];\n    this.color = oh['color'];\n    // note: could have also used . instead of indexing\n\nconst draw = function() {\n    debugger\n    document.addEventListener('DOMContentLoaded', () => {\n        debugger\n        const CanvasEl = document.getElementById('game-canvas');\n        const ctx = CanvasEl.getContext('2D');\n        ctx.beginPath();\n        ctx.arc(250, 250, this.radius, 0, 2 * Math.PI);\n        ctx.closePath();\n        ctx.stroke();\n    })\n};\n\n};\n\n    \n\n\n\n\nmodule.exports = MovingObject;\n\n//# sourceURL=webpack://W9D1/./src/moving_object.js?");
+eval("const MovingObject = function(oh) {\n    this.pos = oh['pos'];\n    this.vel = oh['vel'];\n    this.radius = oh['radius'];\n    this.color = oh['color'];\n    // note: could have also used . instead of indexing\n}\nMovingObject.prototype.draw = function() {\n    debugger\n    document.addEventListener('DOMContentLoaded', () => {\n        debugger\n        const CanvasEl = document.getElementById('game-canvas');\n        const ctx = CanvasEl.getContext('2D');\n        ctx.beginPath();\n        ctx.arc(250, 250, this.radius, 0, 2 * Math.PI);\n        ctx.closePath();\n        ctx.stroke();\n    })\n};\n\n//window.MovingObjectDraw = MovingObject.prototype.draw\n\n    \n//blehhhhhh\n\n\n\nmodule.exports = MovingObject;\n\n//# sourceURL=webpack://W9D1/./src/moving_object.js?");
 
 /***/ })
 

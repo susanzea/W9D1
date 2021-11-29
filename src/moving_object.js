@@ -18,10 +18,10 @@ MovingObject.prototype.draw = function() {
     })
 };
 
-window.MovingObjectDraw = MovingObject.prototype.draw
+//window.MovingObjectDraw = MovingObject.prototype.draw
 
     
-
+//blehhhhhh
 
 
 
